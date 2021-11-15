@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SlutUppgift_Jonatan_Noah
 {
-    public class ProductManager
+   public class Product
     {
         public string Name { get; set; }
 
@@ -18,21 +18,21 @@ namespace SlutUppgift_Jonatan_Noah
         public string ImageFileName { get; set; }
 
         public string Color { get; set; }
+        
     }
-    public class Shirts : ProductManager 
-    { 
+
+    public class Shirt : Product
+    {
         public string ShirtSize { get; set; }
     }
 
-    public class Pants : ProductManager 
-    { 
-        public string PantsSize { get; set; }
-    }
-
-    public class Shoes : ProductManager
+    public class Trousers : Product
     {
-        public int ShoeSize { get; set; }
+        public string TrouserSize { get; set; }
+    }
+   public class Shoe : Product
+    {
+        public string ShoeSize { get; set; }
     }
 
-    
 }

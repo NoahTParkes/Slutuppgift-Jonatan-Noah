@@ -8,18 +8,11 @@ using System.Threading.Tasks;
 
 namespace SlutUppgift_Jonatan_Noah.Pages
 {
-    public class IndexModel : PageModel
+   public class ProductManager 
     {
-        private readonly ILogger<IndexModel> _logger;
 
-        public IndexModel(ILogger<IndexModel> logger)
-        {
-            _logger = logger;
-        }
-
-        public void OnGet()
-        {
-           
-        }
+        public static List<Models.Product> GetProducts();
+        
     }
+    
 }
